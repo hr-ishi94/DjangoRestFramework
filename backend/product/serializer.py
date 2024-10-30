@@ -15,4 +15,8 @@ class ProductSerializer(serializers.ModelSerializer):
             ]
         
     def get_my_amount(self,obj):
+        if not hasattr(obj,'id'):
+            return None
+        if not isinstance(obj, Products):
+            return None
         return obj.other_amount()
