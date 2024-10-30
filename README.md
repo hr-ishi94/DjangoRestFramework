@@ -11,3 +11,5 @@ Install the Libraries required:
 - pyyaml
 - requests
 - django-cors-headers
+
+Py_Client uses requests library to send http requests and get response using command line without the need of an external client.
